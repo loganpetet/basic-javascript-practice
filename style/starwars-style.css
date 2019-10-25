@@ -1,0 +1,45 @@
+h1 {
+    color: rgb(50, 131, 50);
+    background: rgb(13, 46, 1);
+}
+
+main {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-gap: 1rem;
+    width: 100%;
+    max-width: 1280 px;
+    background: #b1a5a5;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.5 rem;
+    border-radius: 10% / 50%;
+    background-color: white;
+    visibility: visible;
+}
+
+h3, p {
+    margin: 0px;
+}
+
+img {
+    width: 120px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 6px;
+
+}
