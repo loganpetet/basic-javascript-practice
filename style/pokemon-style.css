@@ -1,91 +1,166 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  
+}
+
+
+body {
+  margin: 40px; 
+  background-color: rgba(0, 0, 0, 0.781);
+  color: rgb(255, 217, 0);
+}
+
+
+h3 {
+
+padding: 50px;
+}
+
+h2 {
+
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px #000;
+}
+
+h1, p {
+  
+  margin: 0 0 1em 0;
+  size: 2em;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 20px;
+  display: grid;
+  grid-gap: 10px;
+}
+
+header {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header img {
+  max-width: 500px;
+  margin-bottom: 60px auto 60px auto;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+  
+}
 
 main {
-
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-gap: 4rem;
     width: 100%;
-    max-width: 1280 px;
-    margin-bottom: 6rem;
-    
+    max-width: 1680px;
+    margin: 100px auto;
+    margin-bottom: 6rem;   
 }
 
 img {
-    width: 120px;
+    max-width: 150px;
+
+}
+
+
+
+#addPokemon {
+  background: black;
+  height: 260px;
+  width: 200px;
+  border-radius: 30px;
+  color: white;
+  border: 1px solid yellow;
+  margin: 0;
+  
+}
+
+
+ul {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+h5 {
+  font-size: 18px;
+  text-align: justify;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 body { font-family: sans-serif; }
 
-.picDivs {
-  width: 200px;
-}
-
-.charDivs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .scene {
-  width: 200px;
-  height: 260px;
-  border: 1px solid black;
-  margin: 40px 0;
-  perspective: 600px;
+width: 200px;
+height: 260px;
+margin: 40px 0;
+perspective: 600px;
+display: flex;
+justify-content: center;
+border-color: white;
 }
+
 
 .card {
-  width: 100%;
-  height: 100%;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-  cursor: pointer;
-  position: relative;
+width: 100%;
+height: 100%;
+transition: transform 1s;
+transform-style: preserve-3d;
+position: relative;
 }
 
 .card.is-flipped {
-  transform: rotateY(180deg);
+transform: rotateY(180deg);
 }
 
 .card__face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  line-height: 260px; 
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px;
-  backface-visibility: hidden;
+
+position: absolute;
+width: 100%;
+height: 100%;
+line-height: 0px;
+color: whitesmoke;
+text-align: center;
+font-weight: bold;
+font-size: 20px;
+backface-visibility: hidden;
+border: 1px solid #fff;
 }
 
 .card__face--front {
-
+background: rgb(0, 89, 190);
+border-color: yellow;
+border-radius: 20px;
 }
 
-.card__face--back { 
-  
-  transform: rotateY(180deg);
+.card__face--back {
 
-  
-
+border-radius: 20px;
+border-color: yellow;
+transform: rotateY(180deg);
+padding: 20px;
 }
 
-p {
-    text-align: center;
-    position: absolute;
-    bottom: 10px;
-    margin: 0px;
-    font-size: 15px;
-    line-height: 0rem;
-    color: black;
+.picDivs {
+padding: 20px;
 }
 
-button {
-  width: 150px;
-  height: 80px; 
-  background-color: navy;
-  color: white;
-  font-size: 1.5rem;
-  border-radius: 10px;
+
+.pokeability {
+text-align: justify;
+font-size: 0.8em;
+margin: 0px auto 20px auto;
 
 }
