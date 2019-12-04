@@ -2,7 +2,8 @@
     margin: 0px;
 }
 
-nav {
+
+ nav {
     display: flex;
     justify-content: flex-end;
     position: fixed;
@@ -14,12 +15,15 @@ nav {
     z-index: 10;
     
   }
+  
 
 #navlist {
     display: flex;
     justify-content: space-around;
+    font-size: 18px;
     list-style: none;
-    width: 300px;
+    width: 400px;
+
 }
 
 #nav-list a {
@@ -29,8 +33,10 @@ nav {
 
 }
 
+
 a:hover{
-    background: grey;
+    background: darkslategrey;
+    border-radius: 10px;
 }
 
 a {
@@ -58,7 +64,8 @@ h2 {
 }
 
 #welcome-section{
-    background: rgb(32, 32, 32);
+    background-image: url(/images/seattle_skyline.jpg);
+    background-size: cover;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -67,6 +74,10 @@ h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+#projects {
+  background-image: url(/images/white.jpg);
+  background-size: cover;
+}
 .projects-section-header {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -79,7 +90,7 @@ h2 {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 }
 
  @media (max-width: 30.625em) {
