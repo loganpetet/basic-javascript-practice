@@ -219,4 +219,11 @@ h2 {
     transform: translateY(8px);
   }
   
-  
+  footer {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: darkseagreen;
+    text-align: center;
+    background-color: rgb(32, 32, 32);
+    padding-bottom: 25px;
+  }
