@@ -2,7 +2,7 @@
 *http://loganpetet.netlify.com
 
 
-**This is where I practiced my Basic Javascript skills.**
+#**This is where I practiced my Basic Javascript skills.**
 
 1. **The use of slice in a string** - const capitalize = s => {
     if (typeof s !== 'string') return ''
@@ -30,7 +30,7 @@ function color(type) {
 
 3. **The use of Java objects** - pokeCard, pokeFront, pokeBack, pokeScene
 
-**This is where I practiced the use of ES6**
+#**This is where I practiced the use of ES6**
 
 1. **The use of proper let and const** - let pokeNum = getPokeNumber(single_pokemon.id)
 let pokeScene = document.createElement('div')
@@ -68,3 +68,4 @@ femaleButton.addEventListener('click', event => {
 import { films } from '../assets/films.js'
 import { people } from '../assets/people.js'
 
+#**The use of basic data structures**
