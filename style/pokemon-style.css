@@ -79,7 +79,7 @@ img {
   width: 200px;
   border-radius: 30px;
   color: white;
-  border: 1px solid yellow;
+  border: 1px solid white;
   margin: 0;
   
 }
@@ -141,15 +141,15 @@ border: 1px solid #fff;
 }
 
 .card__face--front {
-background: rgb(0, 89, 190);
-border-color: yellow;
+background: linear-gradient(black, blue, yellow);
+border-color: white;
 border-radius: 20px;
 }
 
 .card__face--back {
 
 border-radius: 20px;
-border-color: yellow;
+border-color: white;
 transform: rotateY(180deg);
 padding: 20px;
 }
