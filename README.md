@@ -2,7 +2,7 @@
 *http://loganpetet.netlify.com
 
 
-#**This is where I practiced my Basic Javascript skills.**
+**This is where I practiced my Basic Javascript skills.**
 
 1. **The use of slice in a string** - const capitalize = s => {
     if (typeof s !== 'string') return ''
@@ -30,7 +30,7 @@ function color(type) {
 
 3. **The use of Java objects** - pokeCard, pokeFront, pokeBack, pokeScene
 
-#**This is where I practiced the use of ES6**
+**This is where I practiced the use of ES6**
 
 1. **The use of proper let and const** - let pokeNum = getPokeNumber(single_pokemon.id)
 let pokeScene = document.createElement('div')
@@ -68,4 +68,28 @@ femaleButton.addEventListener('click', event => {
 import { films } from '../assets/films.js'
 import { people } from '../assets/people.js'
 
-#**The use of basic data structures**
+**The use of basic data structures**
+
+1. **Use of arrays to collect data** - const theData = getAPIData('https://pokeapi.co/api/v2/pokemon/?limit=25').then(
+    data => {
+        for (const pokemon of data.results) {
+            getAPIData(pokemon.url).then(pokedata => {
+                populateDOM(pokedata)
+            })
+        }
+    }
+)
+
+2. **Use of objects with key value pairs** - function fillCardBack(pokeBack, data) 
+function populateDOM(single_pokemon)
+
+3. **Iteration between arrays** - pokeAbilities.innerHTML = data.abilities
+        .map(a => a.ability.name)
+        .reduce(
+            (accumulator, currentValue) =>
+                (accumulator += `<li class="pokeability">${currentValue}</li>`),
+            '',
+        )
+
+**The use of Object Oriented Promgramming**
+
