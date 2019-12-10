@@ -1,6 +1,7 @@
 h1 {
     color: rgb(50, 131, 50);
     background: rgb(13, 46, 1);
+    
 }
 
 main {
@@ -17,6 +18,7 @@ main {
 header {
     display: flex;
     justify-content: center;
+    align-content: space-around;
     margin-bottom: 2px;
     background-color: rgb(32,32,32);
 }
@@ -32,17 +34,20 @@ button {
 
 h3, p {
     margin: 3px;
+    font-style: italic;
+    font-size: 16px;
+   
 }
 
 img {
     width: 160px;
+    border: 3px dotted darkseagreen;
 }
 
 div {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    border: 2px solid darkseagreen;
     padding: 3px;
 
 }

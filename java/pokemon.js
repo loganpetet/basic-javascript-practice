@@ -42,7 +42,7 @@ const theData = getAPIData('https://pokeapi.co/api/v2/pokemon/?limit=25').then(
                 populateDOM(pokedata)
             })
         }
-    },
+    }
 )
 
 
@@ -156,7 +156,7 @@ function fillCardBack(pokeBack, data) {
 }
 
 // Set background color of card based on type
-function color(type) {
+/*function color(type) {
     if (type === 'fire') {
         return '#f6b282'
     } else if (type === 'fairy') {
@@ -194,4 +194,4 @@ function color(type) {
     } else if (type === 'water') {
         return '#a4bcf6'
     }
-}
+}*/

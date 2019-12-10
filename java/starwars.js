@@ -34,7 +34,7 @@ crawl.innerText = film.opening_crawl
 mainArea.appendChild(filmDiv)
 }); */
 
-people.forEach(function(person) {
+people.forEach(function (person) {
     let personDiv = document.createElement('div')
     let name = document.createElement('h3')
     let gender = document.createElement('p')
@@ -64,10 +64,12 @@ function getCharNumber(charURL) {
 }
 
 const maleCharacters = people.filter(person => person.gender === "male")
+console.log(maleCharacters)
 const femaleCharacters = people.filter(person => person.gender === "female")
-const otherCharacters = people.filter(person => person.gender !== 'female' && person.gender !== 'male')
-console.log(otherCharacters)
+console.log(femaleCharacters)
 const allDivs = Array.from(mainArea.querySelectorAll('div'))
+
+
 
 let maleButton = document.createElement('button')
 maleButton.textContent = "Male Characters"
@@ -76,22 +78,38 @@ maleButton.addEventListener('click', () => {
         let matchedDiv = allDivs.filter(element => {
             return element.firstChild.textContent === elt.name
         })
-        matchedDiv[0].setAttribute("style", "display: none;")
+        matchedDiv[0].setAttribute("style", "display: none")
+
     })
 })
 
 let femaleButton = document.createElement('button')
 femaleButton.textContent = "Female Characters"
-femaleButton.addEventListener('click', event => {
+femaleButton.addEventListener('click', () => {
     maleCharacters.forEach(elt => {
         let matchedDiv = allDivs.filter(element => {
             return element.firstChild.textContent === elt.name
         })
-        matchedDiv[0].setAttribute("style", "display: none;")
+        matchedDiv[0].setAttribute("style", "display: none")
+
+
+    })
+})
+
+let allButton = document.createElement('button')
+allButton.textContent = "All Characters"
+allButton.addEventListener('click', () => {
+    femaleCharacters.forEach(elt => {
+        let matchedDiv = allDivs.filter(element => {
+            return element.firstChild.textContent === elt.name
+        })
+        matchedDiv[0].setAttribute("style", "display: revert")
+
     })
 })
 mainHeader.appendChild(maleButton)
 mainHeader.appendChild(femaleButton)
+mainHeader.appendChild(allButton)
 
 
 
