@@ -1,5 +1,5 @@
-*http://github.com/loganpetet.com
-*http://loganpetet.netlify.com
+*http://github.com/loganpetet.com*
+*http://loganpetet.netlify.com*
 
 
 **This is where I practiced my Basic Javascript skills.**
@@ -30,7 +30,7 @@ function color(type) {
 
 3. **The use of Java objects** - pokeCard, pokeFront, pokeBack, pokeScene
 
-**This is where I practiced the use of ES6**
+**This is where I practiced the Use of ES6**
 
 1. **The use of proper let and const** - let pokeNum = getPokeNumber(single_pokemon.id)
 let pokeScene = document.createElement('div')
@@ -68,7 +68,7 @@ femaleButton.addEventListener('click', event => {
 import { films } from '../assets/films.js'
 import { people } from '../assets/people.js'
 
-**The use of basic data structures**
+**This is where I practiced the use of basic data structures**
 
 1. **Use of arrays to collect data** - const theData = getAPIData('https://pokeapi.co/api/v2/pokemon/?limit=25').then(
     data => {
@@ -91,5 +91,23 @@ function populateDOM(single_pokemon)
             '',
         )
 
-**The use of Object Oriented Promgramming**
+**This is where I practiced the use of Object Oriented Promgramming**
 
+1. **Using dot notations** - pokeBack.appendChild(pokeOrder)
+    pokeBack.appendChild(pokeHP)
+    pokeBack.appendChild(pokeAb)
+    pokeBack.appendChild(pokeAbilities)
+
+    pokeCard.appendChild(pokeFront)
+    pokeCard.appendChild(pokeBack)
+    pokeScene.appendChild(pokeCard)
+
+2. **Use of constructors** - class pokeCharacter {
+    constructor(id, name, forms, abilities, types) {
+        this.id = id
+        this.name = name
+        this.forms = forms
+        this.abilities = abilities
+        this.types = types
+    }
+}
