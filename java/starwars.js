@@ -1,50 +1,22 @@
-import { films } from '../assets/films.js'
 import { people } from '../assets/people.js'
 
-console.log('Hey, I am JavaScript on your page!')
-
-let mainHeader = document.querySelector('header')
 let mainArea = document.querySelector('main')
+let mainHeader = document.querySelector('header')
 
-/* films.forEach(function(film) {
-let filmDiv = document.createElement('div')
-let title = document.createElement('h1')
-let crawl = document.createElement('p')`
-
-filmDiv.appendChild(title)
-filmDiv.appendChild(crawl)
-
-title.textContent = film.title
-crawl.innerText = film.opening_crawl
-
-mainArea.appendChild(filmDiv)
-})
-
-films.forEach(function(film) {
-let filmDiv = document.createElement('div')
-let title = document.createElement('h1')
-let crawl = document.createElement('p')
-
-filmDiv.appendChild(title)
-filmDiv.appendChild(crawl)
-
-title.textContent = film.title
-crawl.innerText = film.opening_crawl
-
-mainArea.appendChild(filmDiv)
-}); */
 
 people.forEach(function (person) {
     let personDiv = document.createElement('div')
-    let name = document.createElement('h3')
+    let name = document.createElement('h4')
     let gender = document.createElement('p')
     let pic = document.createElement('img')
 
-    personDiv.appendChild(pic)
     personDiv.appendChild(name)
+    personDiv.appendChild(pic)
     personDiv.appendChild(gender)
 
     let charNum = getCharNumber(person.url)
+    pic.setAttribute('class', 'pic')
+    personDiv.setAttribute('class', 'card')
 
     name.textContent = person.name
     gender.textContent = person.gender
@@ -52,6 +24,7 @@ people.forEach(function (person) {
 
     mainArea.appendChild(personDiv)
 })
+
 
 function getCharNumber(charURL) {
     let end = charURL.lastIndexOf('/')
@@ -107,20 +80,8 @@ allButton.addEventListener('click', () => {
 
     })
 })
+
 mainHeader.appendChild(maleButton)
-mainHeader.appendChild(femaleButton)
 mainHeader.appendChild(allButton)
-
-
-
-
-
-
-
-
-
-
-
-
-
+mainHeader.appendChild(femaleButton)
 
